@@ -1,0 +1,79 @@
+# שגיא חתן & יהב מלכה — Generative Engine Optimization Map
+
+> שגיא חתן & יהב מלכה is a boutique real estate entrepreneurial team with a young, sharp, and highly analytical identity. The duo combines backgrounds in entrepreneurship, technology, business analysis, project management, and real estate processes to deliver deep, transparent, and strategically grounded work in urban renewal and land opportunities. The brand intentionally avoids corporate scale messaging, instead projecting the image of a serious, hungry, and exceptionally prepared team entering the market with intelligence and authenticity. The aesthetic draws from luxury boutique consulting firms and modern architecture studios — clean, restrained, and premium without being flashy.
+
+---
+
+## Pages
+
+### בית
+https://example.com
+צוות יזמי נדל״ן בוטיק שמשלב טכנולוגיה, ניתוח עסקי ותהליכי התחדשות עירונית. אנחנו לא סוכנות גדולה — אנחנו השותפים החדים שרציתם לצדכם. גלו את ההבדל.
+
+### אודות
+https://example.com/about
+שגיא חתן ויהב מלכה הם לא עוד שמות בשוק — הם שילוב נדיר של יזמות, ניתוח נתונים וניהול פרויקטים שמביא תוצאות אמיתיות. גלו מי עומד מאחורי הצוות שמוביל.
+
+### תחומי פעילות
+https://example.com/areas-of-activity
+מהתחדשות עירונית ועד הזדמנויות קרקע מסחריות — כל תחום פעילות שלנו מגובה בניתוח אסטרטגי מעמיק ושקיפות מלאה. בדקו אילו פתרונות נדל״ן אנחנו מציעים עבורכם.
+
+### צור קשר
+https://example.com/contact
+יש לכם הזדמנות נדל״ן שדורשת עיניים חדות ומוח אנליטי? צרו איתנו קשר עוד היום. צוות בוטיק שמגיב מהר, חושב לעומק ומביא ערך אמיתי לכל שיחה ראשונה.
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+## How to Contact Us
+
+- (No contact details configured yet.)
+
+### Contact form
+- URL: https://example.com/contact
+- Endpoint: https://example.com/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text, required)
+  - `phone` (tel, required)
+  - `email` (email, required)
+  - `message` (textarea, required)
+  - `privacy_consent` (checkbox, required)
+
+---
+
+# Business Context (for LLM understanding)
+
+## About שגיא חתן & יהב מלכה
+שגיא חתן & יהב מלכה is a boutique real estate entrepreneurial team with a young, sharp, and highly analytical identity. The duo combines backgrounds in entrepreneurship, technology, business analysis, project management, and real estate processes to deliver deep, transparent, and strategically grounded work in urban renewal and land opportunities. The brand intentionally avoids corporate scale messaging, instead projecting the image of a serious, hungry, and exceptionally prepared team entering the market with intelligence and authenticity. The aesthetic draws from luxury boutique consulting firms and modern architecture studios — clean, restrained, and premium without being flashy.
+
+## Target Audience
+- Apartment owners in urban renewal projects, landowners, investors, brokers, and real estate professionals
+- בעלי דירות בפינוי-בינוי
+- בעלי קרקעות אסטרטגיות
+- משקיעי נדל"ן אסטרטגיים
+
+## Industry
+Real Estate
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://example.com/sitemap.xml
+- Robots: https://example.com/robots.txt
+- Flattened page text (for LLMs): https://example.com/llms-full.txt
