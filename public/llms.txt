@@ -41,7 +41,9 @@ Information about WCAG compliance and accessibility features.
 ## How to Contact Us
 
 - Email: hatan.sagi@gmail.com
-- Address: מתם, חיפה
+- Phone: 0584811342
+- Phone (tel): tel:0584811342
+- Address: מתמ, חיפה
 
 ### Contact form
 - URL: https://example.com/contact
