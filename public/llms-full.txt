@@ -485,8 +485,6 @@ Description: צוות יזמי נדל״ן בוטיק שמשלב טכנולוגי
 
 
 
-
-
 ### ניווט מהיר
 
 
@@ -509,11 +507,11 @@ Description: צוות יזמי נדל״ן בוטיק שמשלב טכנולוגי
 
 
 
-- [business_email]
+- hatan.sagi@gmail.com
 
 - [business_phone]
 
-- [business_address]
+- מתם, חיפה
 
 
 
@@ -927,8 +925,6 @@ Description: שגיא חתן ויהב מלכה הם לא עוד שמות בשו�
 
 
 
-
-
 ### ניווט מהיר
 
 
@@ -951,11 +947,11 @@ Description: שגיא חתן ויהב מלכה הם לא עוד שמות בשו�
 
 
 
-- [business_email]
+- hatan.sagi@gmail.com
 
 - [business_phone]
 
-- [business_address]
+- מתם, חיפה
 
 
 
@@ -1379,8 +1375,6 @@ Description: מהתחדשות עירונית ועד הזדמנויות קרקע 
 
 
 
-
-
 ### ניווט מהיר
 
 
@@ -1403,11 +1397,11 @@ Description: מהתחדשות עירונית ועד הזדמנויות קרקע 
 
 
 
-- [business_email]
+- hatan.sagi@gmail.com
 
 - [business_phone]
 
-- [business_address]
+- מתם, חיפה
 
 
 
@@ -1731,8 +1725,6 @@ Description: יש לכם הזדמנות נדל״ן שדורשת עיניים ח�
 
 
 
-
-
 ### ניווט מהיר
 
 
@@ -1755,11 +1747,11 @@ Description: יש לכם הזדמנות נדל״ן שדורשת עיניים ח�
 
 
 
-- [business_email]
+- hatan.sagi@gmail.com
 
 - [business_phone]
 
-- [business_address]
+- מתם, חיפה
 
 
 
@@ -1942,11 +1934,11 @@ Description: מדיניות הפרטיות שלנו - כיצד אנו אוספי
 
 - חברה: שגיא חתן & יהב מלכה
 
-- אימייל: [business_email]
+- אימייל: hatan.sagi@gmail.com
 
 - טלפון: [business_phone]
 
-- כתובת: [business_address]
+- כתובת: מתם, חיפה
 
 
 
@@ -2002,11 +1994,11 @@ Description: מדיניות הפרטיות שלנו - כיצד אנו אוספי
 
 
 
-- [business_email]
+- hatan.sagi@gmail.com
 
 - [business_phone]
 
-- [business_address]
+- מתם, חיפה
 
 
 
@@ -2197,7 +2189,7 @@ Description: הצהרת הנגישות שלנו - מחויבותנו לנגיש�
 
 - חברה: שגיא חתן & יהב מלכה
 
-- אימייל: [business_email]
+- אימייל: hatan.sagi@gmail.com
 
 - טלפון: [business_phone]
 
@@ -2258,11 +2250,11 @@ Description: הצהרת הנגישות שלנו - מחויבותנו לנגיש�
 
 
 
-- [business_email]
+- hatan.sagi@gmail.com
 
 - [business_phone]
 
-- [business_address]
+- מתם, חיפה
 
 
 
@@ -2476,11 +2468,11 @@ Description: תנאי השימוש באתר - הזכויות והחובות של
 
 - חברה: שגיא חתן & יהב מלכה
 
-- אימייל: [business_email]
+- אימייל: hatan.sagi@gmail.com
 
 - טלפון: [business_phone]
 
-- כתובת: [business_address]
+- כתובת: מתם, חיפה
 
 
 
@@ -2533,11 +2525,11 @@ Description: תנאי השימוש באתר - הזכויות והחובות של
 
 
 
-- [business_email]
+- hatan.sagi@gmail.com
 
 - [business_phone]
 
-- [business_address]
+- מתם, חיפה
 
 
 

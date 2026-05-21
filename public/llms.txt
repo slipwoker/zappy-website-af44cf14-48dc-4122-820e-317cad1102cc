@@ -40,7 +40,8 @@ Information about WCAG compliance and accessibility features.
 
 ## How to Contact Us
 
-- (No contact details configured yet.)
+- Email: hatan.sagi@gmail.com
+- Address: מתם, חיפה
 
 ### Contact form
 - URL: https://example.com/contact
