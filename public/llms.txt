@@ -7,33 +7,33 @@
 ## Pages
 
 ### בית
-https://example.com
+https://sagaychatan-yehavmalka.zappy5.app
 צוות יזמי נדל״ן בוטיק שמשלב טכנולוגיה, ניתוח עסקי ותהליכי התחדשות עירונית. אנחנו לא סוכנות גדולה — אנחנו השותפים החדים שרציתם לצדכם. גלו את ההבדל.
 
 ### אודות
-https://example.com/about
+https://sagaychatan-yehavmalka.zappy5.app/about
 שגיא חתן ויהב מלכה הם לא עוד שמות בשוק — הם שילוב נדיר של יזמות, ניתוח נתונים וניהול פרויקטים שמביא תוצאות אמיתיות. גלו מי עומד מאחורי הצוות שמוביל.
 
 ### תחומי פעילות
-https://example.com/areas-of-activity
+https://sagaychatan-yehavmalka.zappy5.app/areas-of-activity
 מהתחדשות עירונית ועד הזדמנויות קרקע מסחריות — כל תחום פעילות שלנו מגובה בניתוח אסטרטגי מעמיק ושקיפות מלאה. בדקו אילו פתרונות נדל״ן אנחנו מציעים עבורכם.
 
 ### צור קשר
-https://example.com/contact
+https://sagaychatan-yehavmalka.zappy5.app/contact
 יש לכם הזדמנות נדל״ן שדורשת עיניים חדות ומוח אנליטי? צרו איתנו קשר עוד היום. צוות בוטיק שמגיב מהר, חושב לעומק ומביא ערך אמיתי לכל שיחה ראשונה.
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://example.com/privacy
+https://sagaychatan-yehavmalka.zappy5.app/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://example.com/terms
+https://sagaychatan-yehavmalka.zappy5.app/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://example.com/accessibility
+https://sagaychatan-yehavmalka.zappy5.app/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -46,8 +46,8 @@ Information about WCAG compliance and accessibility features.
 - Address: מתמ, חיפה
 
 ### Contact form
-- URL: https://example.com/contact
-- Endpoint: https://example.com/api/email/contact-form
+- URL: https://sagaychatan-yehavmalka.zappy5.app/contact
+- Endpoint: https://sagaychatan-yehavmalka.zappy5.app/api/email/contact-form
 - Method: POST
 - Content-Type: application/json
 - Fields:
@@ -77,6 +77,6 @@ Real Estate
 
 # Machine-readable feeds
 
-- Sitemap (XML): https://example.com/sitemap.xml
-- Robots: https://example.com/robots.txt
-- Flattened page text (for LLMs): https://example.com/llms-full.txt
+- Sitemap (XML): https://sagaychatan-yehavmalka.zappy5.app/sitemap.xml
+- Robots: https://sagaychatan-yehavmalka.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://sagaychatan-yehavmalka.zappy5.app/llms-full.txt
