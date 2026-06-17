@@ -161,26 +161,31 @@
       // Track button clicks (counted as actions)
       if (target.tagName === 'BUTTON' || target.closest('button')) {
         var button = target.tagName === 'BUTTON' ? target : target.closest('button');
-        trackEvent('click', {
+        var clickMeta = {
           element: 'button',
           text: button.textContent.trim().substring(0, 100),
           id: button.id || null,
           class: button.className || null
-        });
+        };
+        
+        trackEvent('click', clickMeta);
       }
       
       // Track link clicks (navigation - not counted as actions)
       else if (target.tagName === 'A' || target.closest('a')) {
         var link = target.tagName === 'A' ? target : target.closest('a');
-        trackEvent('navigation', {
+        var navMeta = {
           element: 'link',
           text: link.textContent.trim().substring(0, 100),
           href: link.href,
           external: link.hostname !== window.location.hostname
-        });
+        };
+        
+        trackEvent('navigation', navMeta);
       }
     }, true);
   }
+  
   
   // Track form submissions
   if (config.trackFormSubmissions) {
@@ -223,6 +228,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="הצהרת נגישות">
     <meta name="twitter:description" content="הצהרת הנגישות שלנו - מחויבותנו לנגישות דיגיטלית">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://yazamut-sagi-yahav.com#organization","name":"שגיא חתן & יהב מלכה","url":"https://yazamut-sagi-yahav.com","description":"שגיא חתן & יהב מלכה is a boutique real estate entrepreneurial team with a young, sharp, and highly analytical identity. The duo combines backgrounds in entrepreneurship, technology, business analysis, project management, and real estate processes to deliver deep, transparent, and strategically grounded work in urban renewal and land opportunities. The brand intentionally avoids corporate scale messaging, instead projecting the image of a serious, hungry, and exceptionally prepared team entering the market with intelligence and authenticity. The aesthetic draws from luxury boutique consulting firms and modern architecture studios — clean, restrained, and premium without being flashy.","address":{"@type":"PostalAddress","streetAddress":"מתמ, חיפה"},"contactPoint":[{"@type":"ContactPoint","contactType":"customer service","email":"hatan.sagi@gmail.com","telephone":"0584811342"}]},{"@type":"WebSite","@id":"https://yazamut-sagi-yahav.com#website","url":"https://yazamut-sagi-yahav.com","name":"שגיא חתן & יהב מלכה","publisher":{"@id":"https://yazamut-sagi-yahav.com#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yazamut-sagi-yahav.com"},{"@type":"ListItem","position":2,"name":"Accessibility","item":"https://yazamut-sagi-yahav.com/accessibility"}]}]}</script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     
