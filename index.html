@@ -161,26 +161,31 @@
       // Track button clicks (counted as actions)
       if (target.tagName === 'BUTTON' || target.closest('button')) {
         var button = target.tagName === 'BUTTON' ? target : target.closest('button');
-        trackEvent('click', {
+        var clickMeta = {
           element: 'button',
           text: button.textContent.trim().substring(0, 100),
           id: button.id || null,
           class: button.className || null
-        });
+        };
+        
+        trackEvent('click', clickMeta);
       }
       
       // Track link clicks (navigation - not counted as actions)
       else if (target.tagName === 'A' || target.closest('a')) {
         var link = target.tagName === 'A' ? target : target.closest('a');
-        trackEvent('navigation', {
+        var navMeta = {
           element: 'link',
           text: link.textContent.trim().substring(0, 100),
           href: link.href,
           external: link.hostname !== window.location.hostname
-        });
+        };
+        
+        trackEvent('navigation', navMeta);
       }
     }, true);
   }
+  
   
   // Track form submissions
   if (config.trackFormSubmissions) {
@@ -223,6 +228,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="מובילים את שוק הנדל״ן בחדות ובאנליזה — שגיא חתן &amp; יהב מלכה">
     <meta name="twitter:description" content="צוות יזמי נדל״ן בוטיק שמשלב טכנולוגיה, ניתוח עסקי ותהליכי התחדשות עירונית. אנחנו לא סוכנות גדולה — אנחנו השותפים החדים שרציתם לצדכם. גלו את ההבדל.">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://yazamut-sagi-yahav.com#organization","name":"שגיא חתן & יהב מלכה","url":"https://yazamut-sagi-yahav.com","description":"שגיא חתן & יהב מלכה is a boutique real estate entrepreneurial team with a young, sharp, and highly analytical identity. The duo combines backgrounds in entrepreneurship, technology, business analysis, project management, and real estate processes to deliver deep, transparent, and strategically grounded work in urban renewal and land opportunities. The brand intentionally avoids corporate scale messaging, instead projecting the image of a serious, hungry, and exceptionally prepared team entering the market with intelligence and authenticity. The aesthetic draws from luxury boutique consulting firms and modern architecture studios — clean, restrained, and premium without being flashy.","address":{"@type":"PostalAddress","streetAddress":"מתמ, חיפה"},"contactPoint":[{"@type":"ContactPoint","contactType":"customer service","email":"hatan.sagi@gmail.com","telephone":"0584811342"}]},{"@type":"WebSite","@id":"https://yazamut-sagi-yahav.com#website","url":"https://yazamut-sagi-yahav.com","name":"שגיא חתן & יהב מלכה","publisher":{"@id":"https://yazamut-sagi-yahav.com#organization"}}]}</script>
     <meta property="og:type" content="website">
   <meta property="og:locale" content="he_IL">
   
@@ -813,10 +819,10 @@
 </script>
   
   <main id="main">
-    <section data-band-index="0" class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim">
+    <section data-band-index="0" class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" id="index-hero-section">
   <!-- Background Image -->
   <div class="index-hero-bg">
-    <img loading="eager" fetchpriority="high" data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="Aerial cinematic view of a dense Israeli urban city skyline at dusk or golden hour — Tel Aviv or similar metropolitan area — with layered architectural textures, faint street grid patterns suggesting planning maps, warm amber city lights beginning to glow, and a slightly desaturated moody atmosphere. The image should feel premium, analytical, and editorial — like a high-end real estate intelligence report cover. Dark atmospheric sky in upper portion, warm city grid below." width="1920" height="1080" src="/assets/site-index-hero-image-1.webp" alt="נוף אווירי של עיר ישראלית עם טקסטורות אדריכליות ורשת רחובות">
+    <div data-zappy-zoom-wrapper="true" data-element-id="img-1781688988695-cp1sovc2x" data-element-type="image" data-zappy-zoom-wrapper-width-mode="full" style="position: absolute !important; top: 0px !important; left: 0px !important; width: 100% !important; height: 100% !important; max-width: none !important; margin-left: 0px !important; margin-right: 0px !important; display: block !important; z-index: 1 !important; overflow: hidden !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-zoom-wrapper-align="center"><img loading="eager" fetchpriority="high" data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="Aerial cinematic view of a dense Israeli urban city skyline at dusk or golden hour — Tel Aviv or similar metropolitan area — with layered architectural textures, faint street grid patterns suggesting planning maps, warm amber city lights beginning to glow, and a slightly desaturated moody atmosphere. The image should feel premium, analytical, and editorial — like a high-end real estate intelligence report cover. Dark atmospheric sky in upper portion, warm city grid below." width="1920" height="1080" src="/assets/site-index-hero-image-1.webp" alt="נוף אווירי של עיר ישראלית עם טקסטורות אדריכליות ורשת רחובות" data-hero-background="true" data-element-type="image" data-element-id="img-1781688988695-cp1sovc2x" style="object-position: 31% 61% !important; margin: 0px !important; position: absolute !important; left: 0% !important; top: 0% !important; width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1" data-zappy-object-position="31% 61%"></div>
   </div>
 
   <!-- Scrim Overlay -->
@@ -858,8 +864,8 @@
 
       <!-- CTA Buttons -->
       <div class="index-hero-ctas">
-        <a href="/contact" class="index-hero-btn-primary">לתיאום שיחה</a>
-        <a href="/contact" class="index-hero-btn-secondary">השאירו פרטים</a>
+        <a href="/contact" class="index-hero-btn-primary" data-element-type="button" data-element-id="btn-1781688988693-h8il0d79r" data-native-element="true">לתיאום שיחה</a>
+        <a href="/contact" class="index-hero-btn-secondary" data-element-type="button" data-element-id="btn-1781688988693-7mgqa54ly" data-native-element="true">השאירו פרטים</a>
       </div>
     </div>
   </div>
@@ -912,7 +918,7 @@
         <div class="index-team-label">הצוות</div>
         <h2 class="index-team-heading">שני אנשים.<br>תפיסה אחת.</h2>
         <div class="index-team-accent-line" aria-hidden="true"></div>
-        <p class="index-team-desc" >שגיא ויהב הם צוות יזמי בוטיק שמביא לשולחן שילוב נדיר של ניתוח עסקי, ניהול פרויקטים ותהליכי נדל"ן. לא חברה גדולה, לא סוכנות שגרתית - אלא שני אנשים רציניים, מוכנים ורעבים לעשות את הדברים נכון.</p>
+        <p class="index-team-desc" style="">שגיא ויהב הם צוות יזמי בוטיק שמביא לשולחן שילוב נדיר של ניתוח עסקי, ניהול פרויקטים ותהליכי נדל"ן. לא חברה גדולה, לא סוכנות שגרתית - אלא שני אנשים רציניים, מוכנים ורעבים לעשות את הדברים נכון.</p>
       </div>
     </div>
 
@@ -961,9 +967,9 @@
     <!-- End Cards -->
 
     <!-- Bottom editorial note -->
-    <div class="index-team-footer-note">
+    <div class="index-team-footer-note" style="">
       <span class="index-team-footer-line" aria-hidden="true"></span>
-      <p class="index-team-footer-text">צוות יזמי בוטיק · התחדשות עירונית · ניתוח הזדמנויות נדל"ן</p>
+      <p class="index-team-footer-text" style="" data-element-id="move-1781689618735-glhjenpd">צוות יזמי בוטיק · התחדשות עירונית · <br>ניתוח הזדמנויות נדל"ן</p>
       <span class="index-team-footer-line" aria-hidden="true"></span>
     </div>
 
@@ -990,11 +996,11 @@
       <p><span class="index-services-label">תחומי פעילות</span>
       </p><h2 class="index-services-title">מה אנחנו עושים</h2>
       <div class="index-services-accent-line" aria-hidden="true"></div>
-      <p class="index-services-intro" >אנחנו פועלים בצומת שבין יזמות, ניתוח וניהול תהליכים. כל פרויקט מקבל יחס מקצועי, מחושב ומבוסס נתונים - בלי קיצורי דרך ובלי הבטחות ריקות.</p>
+      <p class="index-services-intro" style="">אנחנו פועלים בצומת שבין יזמות, ניתוח וניהול תהליכים. כל פרויקט מקבל יחס מקצועי, מחושב ומבוסס נתונים - בלי קיצורי דרך ובלי הבטחות ריקות.</p>
     </header>
 
     <!-- Services Grid -->
-    <div class="index-services-grid zappy-preserve-css-grid" id="zappy-auto-grid-1779357090434-fj5xhv" data-zappy-auto-grid="true" data-original-item-width="584" data-original-gap="32px" style="--zappy-grid-cols: repeat(6, minmax(0, 1fr)); grid-template-columns: repeat(6, minmax(0, 1fr)); display: grid; align-items: stretch !important;" data-zappy-explicit-columns="true">
+    <div class="index-services-grid zappy-preserve-css-grid" id="zappy-auto-grid-1779357090434-fj5xhv" data-zappy-auto-grid="true" data-original-item-width="584" data-original-gap="32px" style="--zappy-grid-cols: 173.328px 173.328px 173.328px 173.336px 173.328px 173.328px; grid-template-columns: 173.328px 173.328px 173.328px 173.336px 173.328px 173.328px; display: grid; align-items: stretch !important;" data-zappy-explicit-columns="true">
 
       <!-- Card 1: Urban Renewal -->
       <article class="index-services-card" data-grid-item-index="0">
@@ -1009,7 +1015,7 @@
         </div>
         <div class="index-services-card-content">
           <h3 class="index-services-card-title">התחדשות עירונית</h3>
-          <p class="index-services-card-text" >ליווי מתחמים בתהליכי התחדשות עירונית - מאיתור הפוטנציאל ועד גיבוש מתווה יזמי. אנחנו ניגשים לכל מתחם עם הבנה מעמיקה של הרגולציה, הצרכים של בעלי הדירות ולוחות הזמנים הריאליים.</p>
+          <p class="index-services-card-text" style="">ליווי מתחמים בתהליכי התחדשות עירונית - מאיתור הפוטנציאל ועד גיבוש מתווה יזמי. אנחנו ניגשים לכל מתחם עם הבנה מעמיקה של הרגולציה, הצרכים של בעלי הדירות ולוחות הזמנים הריאליים.</p>
         </div>
       </article>
 
@@ -1027,7 +1033,7 @@
         </div>
         <div class="index-services-card-content">
           <h3 class="index-services-card-title">בדיקות היתכנות</h3>
-          <p class="index-services-card-text" >ניתוח כלכלי ותכנוני של הזדמנויות נדל"ן לפני קבלת החלטות. אנחנו בוחנים עלויות, זכויות בנייה, מיקום ותחרות - ומספקים תמונה ברורה ומבוססת שמאפשרת לקבל החלטות מושכלות.</p>
+          <p class="index-services-card-text" style="">ניתוח כלכלי ותכנוני של הזדמנויות נדל"ן לפני קבלת החלטות. אנחנו בוחנים עלויות, זכויות בנייה, מיקום ותחרות - ומספקים תמונה ברורה ומבוססת שמאפשרת לקבל החלטות מושכלות.</p>
         </div>
       </article>
 
@@ -1047,7 +1053,7 @@
         </div>
         <div class="index-services-card-content">
           <h3 class="index-services-card-title">איתור קרקעות והזדמנויות</h3>
-          <p class="index-services-card-text" >זיהוי נכסים ומגרשים בעלי פוטנציאל יזמי שטרם מומש. אנחנו עובדים בצורה שיטתית ומבוססת ניתוח שוק - ומביאים לשולחן הזדמנויות שלא תמיד גלויות לעין.</p>
+          <p class="index-services-card-text" style="">זיהוי נכסים ומגרשים בעלי פוטנציאל יזמי שטרם מומש. אנחנו עובדים בצורה שיטתית ומבוססת ניתוח שוק - ומביאים לשולחן הזדמנויות שלא תמיד גלויות לעין.</p>
         </div>
       </article>
 
@@ -1082,7 +1088,7 @@
         </div>
         <div class="index-services-card-content">
           <h3 class="index-services-card-title">ליווי שלב ראשוני</h3>
-          <p class="index-services-card-text" >הכוונה אסטרטגית בשלבים המוקדמים של פרויקט - לפני שמתחייבים להוצאות גדולות. אנחנו עוזרים לבנות מסגרת עבודה נכונה, לזהות סיכונים מוקדם ולהניח יסודות שמחזיקים לאורך כל הדרך.</p>
+          <p class="index-services-card-text" style="">הכוונה אסטרטגית בשלבים המוקדמים של פרויקט - לפני שמתחייבים להוצאות גדולות. אנחנו עוזרים לבנות מסגרת עבודה נכונה, לזהות סיכונים מוקדם ולהניח יסודות שמחזיקים לאורך כל הדרך.</p>
         </div>
       </article>
 
@@ -1235,7 +1241,7 @@
       <div class="footer-col footer-brand">
         
         <div class="footer-accent-line"></div>
-        <p class="footer-tagline" >מומחים בנדל"ן עם ראייה אסטרטגית, ליווי אישי ומחויבות מלאה לכל לקוח. מוצאים עבורכם את הנכס הנכון, במקום הנכון, בזמן הנכון.</p>
+        <p class="footer-tagline" style="">מומחים בנדל"ן עם ראייה אסטרטגית, ליווי אישי ומחויבות מלאה לכל לקוח. מוצאים עבורכם את הנכס הנכון, במקום הנכון, בזמן הנכון.</p>
         <div class="footer-social">
           <!-- WhatsApp - enabled -->
           <a href="https://wa.me/972584811342" class="footer-social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
@@ -1261,12 +1267,12 @@
       <div class="footer-col footer-contact-col">
         <h3 class="footer-heading">יצירת קשר</h3>
         <div class="footer-heading-rule"></div>
-        <ul class="footer-contact" ><li>
+        <ul class="footer-contact" style=""><li>
             <span class="contact-icon"><i class="fas fa-envelope" style="cursor: pointer;"></i></span>
             <span class="contact-text"><a href="mailto:hatan.sagi@gmail.com">hatan.sagi@gmail.com</a></span>
           </li><li>
             <span class="contact-icon"><i class="fas fa-phone" style="cursor: pointer;"></i></span>
-            <span class="contact-text"><a href="tel:0584811342" >058-4811342</a></span>
+            <span class="contact-text"><a href="tel:0584811342" style="">058-4811342</a></span>
           </li><li><a href="/"><span class="contact-icon"><i class="fas fa-map-marker-alt" style="cursor: pointer;"></i></span>
             <span class="contact-text">מתמ, חיפה</span></a></li></ul>
       </div>
@@ -1275,7 +1281,7 @@
       <div class="footer-col footer-hours">
         <h3 class="footer-heading">שעות פעילות</h3>
         <div class="footer-heading-rule"></div>
-        <ul class="hours-list" ><li><a href="/" ><span class="hours-day">ראשון – חמישי&nbsp;&nbsp;</span><span class="hours-time">09:00 – 18:00</span></a></li><li><a href="/" ><span class="hours-day">שישי&nbsp;&nbsp;</span><span class="hours-time">09:00 – 13:00</span></a></li><li><a href="/" ><span class="hours-day">שבת&nbsp;&nbsp;</span><span class="hours-time closed">סגור</span></a></li></ul>
+        <ul class="hours-list" style=""><li><a href="/" style=""><span class="hours-day">ראשון – חמישי&nbsp;&nbsp;</span><span class="hours-time">09:00 – 18:00</span></a></li><li><a href="/" style=""><span class="hours-day">שישי&nbsp;&nbsp;</span><span class="hours-time">09:00 – 13:00</span></a></li><li><a href="/" style=""><span class="hours-day">שבת&nbsp;&nbsp;</span><span class="hours-time closed">סגור</span></a></li></ul>
         <div class="footer-badge"><i class="fas fa-headset"></i> זמינים עבורכם תמיד</div>
       </div>
 
@@ -1298,7 +1304,7 @@
   </div>
 </footer>
   
-  <a href="https://wa.me/972584811342" class="whatsapp-float" aria-label="WhatsApp" style="display:flex">
+  <a href="https://wa.me/972584811342" class="whatsapp-float" aria-label="WhatsApp" style="display:flex;">
     <i class="fab fa-whatsapp"></i>
   </a>
   

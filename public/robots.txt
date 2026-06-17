@@ -50,4 +50,4 @@ Allow: /
 User-agent: MistralAI-User
 Allow: /
 
-Sitemap: https://sagaychatan-yehavmalka.zappy5.app/sitemap.xml
+Sitemap: https://yazamut-sagi-yahav.com/sitemap.xml
