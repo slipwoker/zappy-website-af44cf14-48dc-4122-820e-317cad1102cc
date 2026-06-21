@@ -1533,6 +1533,79 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+/* Added Component Script */
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('.contact-form');
+  if (!form) return;
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const firstName = form.querySelector('#contact-first-name');
+    const lastName = form.querySelector('#contact-last-name');
+    const phone = form.querySelector('#contact-phone');
+    let isValid = true;
+
+    // Simple validation
+    if (firstName && !firstName.value.trim()) {
+      firstName.style.borderColor = '#e74c3c';
+      isValid = false;
+    } else if (firstName) {
+      firstName.style.borderColor = '#E8ECF1';
+    }
+
+    if (lastName && !lastName.value.trim()) {
+      lastName.style.borderColor = '#e74c3c';
+      isValid = false;
+    } else if (lastName) {
+      lastName.style.borderColor = '#E8ECF1';
+    }
+
+    if (phone && !phone.value.trim()) {
+      phone.style.borderColor = '#e74c3c';
+      isValid = false;
+    } else if (phone) {
+      phone.style.borderColor = '#E8ECF1';
+    }
+
+    if (isValid) {
+      const submitBtn = form.querySelector('.form-submit-btn');
+      const originalText = submitBtn.querySelector('.form-submit-text').textContent;
+      submitBtn.querySelector('.form-submit-text').textContent = 'נשלח! ✓';
+      submitBtn.style.pointerEvents = 'none';
+      submitBtn.style.opacity = '0.85';
+
+      // Simulate submission - replace with actual form handling
+      setTimeout(function() {
+        submitBtn.querySelector('.form-submit-text').textContent = originalText;
+        submitBtn.style.pointerEvents = 'auto';
+        submitBtn.style.opacity = '1';
+        form.reset();
+        // Remove validation styling
+        [firstName, lastName, phone].forEach(function(el) {
+          if (el) el.style.borderColor = '#E8ECF1';
+        });
+        alert('תודה על פנייתך! נחזור אליך בהקדם.');
+      }, 1500);
+    } else {
+      // Focus first invalid field
+      if (firstName && !firstName.value.trim()) firstName.focus();
+      else if (lastName && !lastName.value.trim()) lastName.focus();
+      else if (phone && !phone.value.trim()) phone.focus();
+    }
+  });
+
+  // Clear validation styling on input
+  const inputs = form.querySelectorAll('.form-input');
+  inputs.forEach(function(input) {
+    input.addEventListener('input', function() {
+      if (this.style.borderColor === 'rgb(231, 76, 60)') {
+        this.style.borderColor = '#E8ECF1';
+      }
+    });
+  });
+});
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
