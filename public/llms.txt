@@ -25,6 +25,9 @@ https://yazamut-sagi-yahav.com/contact
 ### הפרויקטים שלנו
 https://yazamut-sagi-yahav.com/our-projects
 
+### Page
+https://yazamut-sagi-yahav.com/contact-us
+
 ## Legal & Policy
 
 ### Privacy Policy
@@ -57,8 +60,8 @@ Information about WCAG compliance and accessibility features.
   - `name` (text, required)
   - `phone` (tel, required)
   - `email` (email, required)
-  - `message` (textarea, required)
-  - `privacy_consent` (checkbox, required)
+  - `message` (textarea)
+  - `privacy_consent` (checkbox)
 
 ---
 
