@@ -1460,6 +1460,80 @@ window.onload = function() {
 })();
 
 
+/* Added Component Script */
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('.cta-central-form');
+  if (!form) return;
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Basic validation
+    const nameInput = form.querySelector('#cta-name');
+    const phoneInput = form.querySelector('#cta-phone');
+
+    let isValid = true;
+
+    if (!nameInput.value.trim()) {
+      nameInput.style.borderColor = '#e74c3c';
+      nameInput.style.boxShadow = '0 0 0 4px rgba(231, 76, 60, 0.15)';
+      isValid = false;
+    } else {
+      nameInput.style.borderColor = '';
+      nameInput.style.boxShadow = '';
+    }
+
+    if (!phoneInput.value.trim()) {
+      phoneInput.style.borderColor = '#e74c3c';
+      phoneInput.style.boxShadow = '0 0 0 4px rgba(231, 76, 60, 0.15)';
+      isValid = false;
+    } else {
+      phoneInput.style.borderColor = '';
+      phoneInput.style.boxShadow = '';
+    }
+
+    if (!isValid) return;
+
+    // Simulate submission
+    const submitBtn = form.querySelector('.cta-central-submit-btn');
+    const originalHTML = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<span>שולח...</span>';
+    submitBtn.disabled = true;
+    submitBtn.style.opacity = '0.8';
+    submitBtn.style.cursor = 'not-allowed';
+
+    setTimeout(function() {
+      submitBtn.innerHTML = '<span>✓ נשלח בהצלחה!</span>';
+      submitBtn.style.opacity = '1';
+      submitBtn.style.cursor = 'default';
+      form.reset();
+
+      setTimeout(function() {
+        submitBtn.innerHTML = originalHTML;
+        submitBtn.disabled = false;
+        submitBtn.style.cursor = 'pointer';
+      }, 2500);
+    }, 1200);
+  });
+
+  // Clear validation styling on input
+  const inputs = form.querySelectorAll('.cta-central-input, .cta-central-textarea');
+  inputs.forEach(function(input) {
+    input.addEventListener('input', function() {
+      input.style.borderColor = '';
+      input.style.boxShadow = '';
+    });
+    input.addEventListener('focus', function() {
+      input.style.borderColor = '#C8A96E';
+      input.style.boxShadow = '0 0 0 4px rgba(200, 169, 110, 0.1)';
+    });
+    input.addEventListener('blur', function() {
+      input.style.boxShadow = '';
+    });
+  });
+});
+
+
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
   try {
