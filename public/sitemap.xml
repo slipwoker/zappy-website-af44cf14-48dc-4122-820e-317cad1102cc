@@ -25,6 +25,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://yazamut-sagi-yahav.com/our-projects</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://yazamut-sagi-yahav.com/privacy</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
