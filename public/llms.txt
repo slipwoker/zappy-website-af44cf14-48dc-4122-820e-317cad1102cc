@@ -22,25 +22,8 @@ https://yazamut-sagi-yahav.com/areas-of-activity
 https://yazamut-sagi-yahav.com/contact
 יש לכם הזדמנות נדל״ן שדורשת עיניים חדות ומוח אנליטי? צרו איתנו קשר עוד היום. צוות בוטיק שמגיב מהר, חושב לעומק ומביא ערך אמיתי לכל שיחה ראשונה.
 
-### פרויקטים ופעילות
-https://yazamut-sagi-yahav.com/blog
-שגיא חתן & יהב מלכה - פרויקטים ופעילות
-
-### התחדשות
-https://yazamut-sagi-yahav.com/blog/urban-renewal-first-steps
-מדריך תמציתי להבנת הבדיקות הראשונות שכדאי לבצע לפני שמתחילים לקדם מהלך של התחדשות עירונית.
-
-### פיקוח
-https://yazamut-sagi-yahav.com/blog/project-supervision-selection
-נקודות מפתח לבחירת גורם מלווה שיידע לנהל, לתאם ולפקח על פרויקט נדל"ן באופן שקול ומסודר.
-
-### סטטוס
-https://yazamut-sagi-yahav.com/blog/planning-status-meaning
-איך לקרוא נכון סטטוס תכנוני, למה הוא לא מספר את כל הסיפור, ואילו שאלות חשוב לשאול מעבר לכותרת.
-
-### דיירים
-https://yazamut-sagi-yahav.com/blog/tenant-organization-guide
-תהליך התארגנות נכון מתחיל בתקשורת ברורה, ייצוג מסודר והבנה משותפת של הדרך לקידום הפרויקט.
+### Page
+https://yazamut-sagi-yahav.com/our-projects
 
 ## Legal & Policy
 
@@ -74,8 +57,8 @@ Information about WCAG compliance and accessibility features.
   - `name` (text, required)
   - `phone` (tel, required)
   - `email` (email, required)
-  - `message` (textarea, required)
-  - `privacy_consent` (checkbox, required)
+  - `message` (textarea)
+  - `privacy_consent` (checkbox)
 
 ---
 
