@@ -22,9 +22,6 @@ https://yazamut-sagi-yahav.com/areas-of-activity
 https://yazamut-sagi-yahav.com/contact
 יש לכם הזדמנות נדל״ן שדורשת עיניים חדות ומוח אנליטי? צרו איתנו קשר עוד היום. צוות בוטיק שמגיב מהר, חושב לעומק ומביא ערך אמיתי לכל שיחה ראשונה.
 
-### Page
-https://yazamut-sagi-yahav.com/our-projects
-
 ## Legal & Policy
 
 ### Privacy Policy
@@ -58,7 +55,7 @@ Information about WCAG compliance and accessibility features.
   - `phone` (tel, required)
   - `email` (email, required)
   - `message` (textarea)
-  - `privacy_consent` (checkbox)
+  - `privacy_consent` (checkbox, required)
 
 ---
 
