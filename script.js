@@ -1606,6 +1606,21 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+/* Added Component Script */
+/* Optional: Track CTA button clicks for analytics */
+document.addEventListener('DOMContentLoaded', function() {
+  const ctaButton = document.querySelector('.cta-rights-button');
+  if (ctaButton) {
+    ctaButton.addEventListener('click', function(e) {
+      // Placeholder for analytics tracking
+      console.log('CTA clicked: בדיקת זכויות לבניין שלי');
+      // If you want to prevent default and handle navigation programmatically:
+      // e.preventDefault();
+      // window.location.href = '/check-rights';
+    });
+  }
+});
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
