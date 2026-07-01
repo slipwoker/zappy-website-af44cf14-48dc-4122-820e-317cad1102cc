@@ -6,24 +6,27 @@
 
 ## Pages
 
-### בית
+### מובילים את שוק הנדל״ן בחדות ובאנליזה — שגיא חתן &amp; יהב מלכה
 https://yazamut-sagi-yahav.com
 צוות יזמי נדל״ן בוטיק שמשלב טכנולוגיה, ניתוח עסקי ותהליכי התחדשות עירונית. אנחנו לא סוכנות גדולה — אנחנו השותפים החדים שרציתם לצדכם. גלו את ההבדל.
 
-### אודות
+### הכירו את הצוות שמשנה את כללי המשחק — שגיא חתן &amp; יהב מלכה
 https://yazamut-sagi-yahav.com/about
 שגיא חתן ויהב מלכה הם לא עוד שמות בשוק — הם שילוב נדיר של יזמות, ניתוח נתונים וניהול פרויקטים שמביא תוצאות אמיתיות. גלו מי עומד מאחורי הצוות שמוביל.
 
-### תחומי פעילות
+### תחומי פעילות שמניבים עסקאות חכמות ומדויקות — שגיא חתן &amp; יהב מלכה
 https://yazamut-sagi-yahav.com/areas-of-activity
 מהתחדשות עירונית ועד הזדמנויות קרקע מסחריות — כל תחום פעילות שלנו מגובה בניתוח אסטרטגי מעמיק ושקיפות מלאה. בדקו אילו פתרונות נדל״ן אנחנו מציעים עבורכם.
 
-### צור קשר
+### Page
+https://yazamut-sagi-yahav.com/our-projects
+
+### Page
+https://yazamut-sagi-yahav.com/menu-group-1782898446396
+
+### מוכנים לעסקה הבאה? בואו נדבר — שגיא חתן &amp; יהב מלכה
 https://yazamut-sagi-yahav.com/contact
 יש לכם הזדמנות נדל״ן שדורשת עיניים חדות ומוח אנליטי? צרו איתנו קשר עוד היום. צוות בוטיק שמגיב מהר, חושב לעומק ומביא ערך אמיתי לכל שיחה ראשונה.
-
-### הפרויקטים שלנו
-https://yazamut-sagi-yahav.com/our-projects
 
 ## Legal & Policy
 
@@ -58,7 +61,7 @@ Information about WCAG compliance and accessibility features.
   - `phone` (tel, required)
   - `email` (email, required)
   - `message` (textarea)
-  - `privacy_consent` (checkbox, required)
+  - `privacy_consent` (checkbox)
 
 ---
 
