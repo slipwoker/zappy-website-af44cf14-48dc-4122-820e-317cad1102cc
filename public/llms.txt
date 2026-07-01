@@ -25,6 +25,26 @@ https://yazamut-sagi-yahav.com/contact
 ### הפרויקטים שלנו
 https://yazamut-sagi-yahav.com/our-projects
 
+### חפ/2666 בחיפה – מדריך לבעלי דירות להתחדשות עירונית
+https://yazamut-sagi-yahav.com/blog
+שגיא חתן & יהב מלכה - חפ/2666 בחיפה – מדריך לבעלי דירות להתחדשות עירונית
+
+### חפ/2666
+https://yazamut-sagi-yahav.com/blog/what-is-haf-2666
+מדריך לבעלי דירות בחיפה שמסביר מה עומד מאחורי תוכנית חפ/2666, כיצד היא מחליפה את תמ״א 38 ומה חשוב לבדוק לפני שמתחילים.
+
+### מסלולים
+https://yazamut-sagi-yahav.com/blog/haf-2666-renewal-routes
+מה ההבדל בין הריסה ובנייה מחדש לבין חיזוק ותוספת בנייה, ואיך בוחרים את המסלול הנכון במסגרת תוכנית חפ/2666.
+
+### זכויות
+https://yazamut-sagi-yahav.com/blog/haf-2666-building-rights
+הסבר מעשי על זכויות בנייה בחיפה במסגרת חפ/2666, ומהם הגורמים שיכולים להשפיע על התמורה לבעלי הדירות.
+
+### נווה שאנן
+https://yazamut-sagi-yahav.com/blog/neve-shaanan-haf-2666
+למה נווה שאנן ושער הטכניון נחשבים אזורים מעניינים במסגרת חפ/2666, ומה בעלי דירות צריכים לבדוק לפני קידום פרויקט.
+
 ## Legal & Policy
 
 ### Privacy Policy
@@ -57,7 +77,7 @@ Information about WCAG compliance and accessibility features.
   - `name` (text, required)
   - `phone` (tel, required)
   - `email` (email, required)
-  - `message` (textarea)
+  - `message` (textarea, required)
   - `privacy_consent` (checkbox, required)
 
 ---
