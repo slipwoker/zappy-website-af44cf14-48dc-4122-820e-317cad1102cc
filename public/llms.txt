@@ -25,7 +25,7 @@ https://yazamut-sagi-yahav.com/contact
 ### הפרויקטים שלנו
 https://yazamut-sagi-yahav.com/our-projects
 
-### חפ/2666 בחיפה – מדריך לבעלי דירות להתחדשות עירונית
+### בלוג
 https://yazamut-sagi-yahav.com/blog
 שגיא חתן & יהב מלכה - חפ/2666 בחיפה – מדריך לבעלי דירות להתחדשות עירונית
 
@@ -65,7 +65,7 @@ Information about WCAG compliance and accessibility features.
   - `name` (text, required)
   - `phone` (tel, required)
   - `email` (email, required)
-  - `message` (textarea)
+  - `message` (textarea, required)
   - `privacy_consent` (checkbox, required)
 
 ---
